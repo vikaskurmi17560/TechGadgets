@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Tech Gadgets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nav-tabs .nav-link {
+        border: none;
+        border-bottom: 2px solid transparent;
+    }
+    
+    .nav-tabs .nav-link.active {
+        border-bottom: 2px solid #007bff;
+    }
+    
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-body {
+        text-align: center;
+    }
+    
+    .footer-section {
+        background-color: #f8f9fa;
+    }
+    
+    .footer-section ion-icon {
+        font-size: 24px;
+        color: #6c757d;
+    }
+    
+    .footer-section ion-icon:hover {
+        color: #007bff;
+    }
+    
+    .form-label {
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechGadgets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-0 ms-md-3">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-0 ms-md-3">
+                        <a class="px-4 py-2 btn btn-primary" href="#">Products</a>
+                    </li>
+                    <li class="nav-item ms-0 ms-md-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ms-0 ms-md-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center mb-5 fw-bold">Our Products</h1>
+        <ul class="nav nav-tabs d-flex flex-wrap justify-content-center" id="productsTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active me-md-3 me-1 text-dark" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link me-md-3 me-1 text-dark" id="vr-tab" data-bs-toggle="tab" data-bs-target="#vr-tab-pane" type="button" role="tab" aria-controls="vr-tab-pane" aria-selected="false">Virtual Reality</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link me-md-3 me-1 text-dark" id="headphones-tab" data-bs-toggle="tab" data-bs-target="#headphones-tab-pane" type="button" role="tab" aria-controls="headphones-tab-pane" aria-selected="false">Headphones</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="productsTabContent">
+            <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab">
+                <div class="row g-4 mt-5 justify-content-center align-items-center">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="img/headphones-1.webp" alt="Headphones" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">High-Quality Headphones</h5>
+                                <p class="card-text">Experience superior sound quality with our latest headphones.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="img/vr-1.webp" alt="VR Headset" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Advanced VR Headset</h5>
+                                <p class="card-text">Dive into immersive virtual reality experiences with our advanced VR headset.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="img/vr-2.webp" alt="VR Goggles" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">VR Goggles</h5>
+                                <p class="card-text">Enjoy cutting-edge VR technology with our VR goggles.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="vr-tab-pane" role="tabpanel" aria-labelledby="vr-tab">
+                <div class="row g-4 mt-5 justify-content-center align-items-center">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="img/vr-1.webp" alt="VR Headset" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Advanced VR Headset</h5>
+                                <p class="card-text">Dive into immersive virtual reality experiences with our advanced VR headset.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="img/vr-2.webp" alt="VR Goggles" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">VR Goggles</h5>
+                                <p class="card-text">Enjoy cutting-edge VR technology with our VR goggles.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="headphones-tab-pane" role="tabpanel" aria-labelledby="headphones-tab">
+                <div class="row g-4 mt-5 justify-content-center align-items-center">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <img src="img/headphones-1.webp" alt="Headphones" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">High-Quality Headphones</h5>
+                                <p class="card-text">Experience superior sound quality with our latest headphones.</p>
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <p class="text-center py-3 mb-0">
+            &copy; 2024 TechGadgets Hub. All rights reserved.
+        </p>
+        <div class="text-center">
+            <a href="#" class="me-3"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#" class="me-3"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#" class="me-3"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#" class="me-3"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
